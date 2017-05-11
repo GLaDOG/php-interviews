@@ -22,18 +22,18 @@ POST - 将要处理的数据提交给指定的资源
    - POST请求对数据长度没有限制
 4: session与cookie的区别?
 4: cookie - 通常使用cookie来标识用户.cookie是服务器嵌入用户计算机上的小文件,每次同一台计算机通过浏览器请求页面时,它也会发送cookie.
-   session - 跨多个页面时,储存信息的方式.(HTTP是无状态的)
-5: 用PHP打印出前一天的时间格式是2015-8-10 22:21:21(2分)
+   session - 跨多个页面时,储存信息的方式.(HTTP是无状态的)  
+5: 用PHP打印出前一天的时间格式是2015-8-10 22:21:21(2分)  
 5:
 <pre><code>
    $yesterday = date('Y-m-d H:i:s', strtotime('-1 day'));
    $yesterday = date('Y-m-d H:i:s', Time() - 24 * 3600);
 </code></pre>
-6: 能够使HTML和PHP分离开使用的模板引擎(1分)
-6: Smarty, Twig, Haml, Liquid, Mustache, Plates, Blade
-7: 使用哪些工具进行版本控制?
-7: cvs svn git
-8: 如何实现字符串翻转?
+6: 能够使HTML和PHP分离开使用的模板引擎(1分)  
+6: Smarty, Twig, Haml, Liquid, Mustache, Plates, Blade  
+7: 使用哪些工具进行版本控制?  
+7: cvs svn git  
+8: 如何实现字符串翻转?  
 <pre><code>
     function str_rev($str){
         //先判断参数是否为字符串，且为UTF8编码
@@ -62,21 +62,19 @@ POST - 将要处理的数据提交给指定的资源
         return $str;
     }
 </code></pre>
-9: 有一个网页地址, 比如PHP开发资源网主页: http://www.baidu.com,如何得到它的内容?($1分)
-9: file_get_contents($url);
-10: 在PHP中error_reporting这个函数有什么作用? (1分)
-10: 设置应该报告何种 PHP 错误
-11: JS表单弹出对话框函数是?获得输入焦点函数是? (2分)
-11: 警告消息框alert() 确认消息框confirm() 提示消息框prompt() 输入焦点函数focus()
-12: foo()和@foo()之间有什么区别?(1分)
-12: PHP 支持一个错误控制运算符：@。当将其放置在一个 PHP 表达式之前，该表达式可能产生的任何错误信息都被忽略掉。
-13: GD库是做什么用的? (1分)
-13: 使PHP具有图像处理功能  
-14: 写一个函数，能够遍历一个文件夹下的所有文件和子文件夹。  
+9: 有一个网页地址, 比如PHP开发资源网主页: http://www.baidu.com,如何得到它的内容?($1分)  
+9: file_get_contents($url);  
+10: 在PHP中error_reporting这个函数有什么作用? (1分)  
+10: 设置应该报告何种 PHP 错误  
+11: JS表单弹出对话框函数是?获得输入焦点函数是? (2分)  
+11: 警告消息框alert() 确认消息框confirm() 提示消息框prompt() 输入焦点函数focus()  
+12: foo()和@foo()之间有什么区别?(1分)  
+12: PHP 支持一个错误控制运算符：@。当将其放置在一个 PHP 表达式之前，该表达式可能产生的任何错误信息都被忽略掉。  
+13: GD库是做什么用的? (1分)  
+13: 使PHP具有图像处理功能    
+14: 写一个函数，能够遍历一个文件夹下的所有文件和子文件夹。   
 14:
 <pre><code>
-<?php
-
 function traver($path)
 {
     if (isset($path) && is_dir($path)) {
