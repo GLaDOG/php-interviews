@@ -40,3 +40,24 @@ function strrev_utf8($str)
 
 print strrev_utf8('美利坚合众国') . PHP_EOL;
 
+/**
+ * This is a string => string a is this
+ */
+function my_rev($str)
+{
+    $arr = explode(' ', $str);
+    $len = count($arr);
+    $left = 0;
+    $right = $len - 1;
+    while ($left < $right) {
+        $tmp = $arr[$left];
+        $arr[$left] = $arr[$right];
+        $arr[$right] = $tmp;
+        $left++;
+        $right--;
+    }
+    return implode(' ', $arr);
+}
+
+$str = "this is a string";
+print my_rev($str) . PHP_EOL;
