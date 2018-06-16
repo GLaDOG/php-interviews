@@ -23,6 +23,11 @@ class ChocolateBoiler
         return self::$uniqueInstance;
     }
 
+    private function __clone()
+    {
+        throw new BadMethodCallException('You cannot clone that class');
+    }
+
     public function fill()
     {
         if($this->isEmpty())
