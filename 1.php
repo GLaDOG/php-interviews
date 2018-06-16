@@ -1,3 +1,4 @@
 <?php
 #echo '12ab' + 2.'45ab';
-echo (print('2'));
+#echo PHP_EOL;
+echo (print('2')) . PHP_EOL;
